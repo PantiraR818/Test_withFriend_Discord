@@ -1,0 +1,46 @@
+  
+   < Git Config > !!!!!!!! USER !!!!!!!
+  git config --global user.name "< username github>"
+  git config --global user.email "< e-mail,g-mail,hotmail github>"
+  git config --global --list
+
+คำสัง clone github
+
+git clone <link github>
+
+  คำสั่งสร้าง project TypeScript
+  npm init --yes
+
+  tsconfig.json
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "module": "commonjs"
+    }
+}
+
+ คำสั่งอัพไฟล์ครั้งแรก
+  git init
+  git add .
+  git commit -m "<ข้อความ>"
+  git branch -M main
+  git remote add origin <link github ที่สร้าง>
+  git push -u origin main
+
+ คำสั่งอัพไฟล์รอบถัดๆ ไป
+ git add .
+ git commit -m "<ข้อความ>"
+ git push -u origin main
+
+ คำสั่ง compile จากไฟล์ (TypeScript) .ts ==> (JavaScript) .js
+  - tsc
+  - tsc --watch ( auto compile ) <!!! เพิ่ม Terminal ใช่สำหรับ run ไฟล์ .js !!! >
+
+ คำสั่ง run ไฟล์ .js 
+ node dist/<ชื่อไฟล์>.js
+
+
+
+
